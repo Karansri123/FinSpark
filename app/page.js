@@ -1,6 +1,8 @@
 import HeroSection from "@/components/hero";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { featuresData, howItWorksData, statsData } from "@/data/landing";
+import { featuresData, howItWorksData, statsData, testimonialsData } from "@/data/landing";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -65,6 +67,27 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-20 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500">
+  <div className="container mx-auto px-6 text-center">
+    <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">
+    Transform Your Finances, Transform Your Future!
+    </h2>
+    <p className="text-white/90 mb-8 max-w-xl mx-auto text-lg">
+    A <span className="font-semibold text-yellow-300">rapidly expanding group of financially wise users </span> is already boosting their financial outcomes with <span className="font-bold text-yellow-400">FinSpark</span>.
+    </p>
+    <Link href="/dashboard">
+      <Button
+        size="lg"
+        className="bg-yellow-400 text-gray-900 font-semibold rounded-full px-6 py-3 hover:bg-yellow-300 hover:scale-105 hover:shadow-xl transition-transform duration-300"
+      >
+        🚀 Start Your Free Trial Now
+      </Button>
+    </Link>
+  </div>
+</section>
+
+
     </div>
   );
 }

@@ -4,12 +4,17 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { LayoutDashboard, PenBox } from "lucide-react";
 import 'remixicon/fonts/remixicon.css'
-const Header = () => {
+import { checkUser } from "@/lib/checkUser";
+
+const Header = async() => {
+  await checkUser();
   return (
     <div className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/">
-          <h3 className="font-semibold text-xl">FinSpark</h3>
+        <h3 className="font-extrabold text-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 tracking-wide uppercase hover:from-pink-500 hover:to-purple-500 transition-all duration-300">
+      FinSpark
+    </h3>
         </Link>
 
         <div className="flex items-center space-x-4">

@@ -85,28 +85,3 @@ import {
         "Receive AI-powered insights and recommendations to optimize your finances",
     },
   ];
-  
-  // Testimonials Data
-  export const testimonialsData = [
-    {
-      name: "Jessica Miller",
-      role: "Startup Founder",
-      image: "https://randomuser.me/api/portraits/women/45.jpg",
-      quote:
-        "HavenSpot has revolutionized the way I handle property management. The seamless integration and analytics give me complete control over my operations.",
-    },
-    {
-      name: "Daniel Kim",
-      role: "Digital Nomad",
-      image: "https://randomuser.me/api/portraits/men/45.jpg",
-      quote:
-        "Booking and managing short-term rentals has never been easier. HavenSpot's platform saves me time and minimizes headaches.",
-    },
-    {
-      name: "Sophia Martinez",
-      role: "Real Estate Agent",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
-      quote:
-        "I rely on HavenSpot for accurate data and smooth transactions. It’s my go-to tool for managing multiple properties effortlessly.",
-    },    
-  ];
